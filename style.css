@@ -1,4 +1,5 @@
-*{
+/* --- GENERAL SETUP --- */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -6,21 +7,22 @@
 }
 
 body {
-    background-color: #f4f4f5;
+    background-color: #f8fafc;
     color: #1e293b;
     line-height: 1.5;
 }
 
+/* --- AUTHENTICATION STYLES (LOGIN & REGISTER) --- */
 .login-body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .login-container {
-    background-color: #fbfbff;
+    background-color: #ffffff;
     padding: 32px;
     border-radius: 12px;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
@@ -34,17 +36,17 @@ body {
     text-align: center;
     color: #0f172a;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .form-group {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 6px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 13px;
     color: #475569;
     text-transform: uppercase;
@@ -54,7 +56,7 @@ body {
 .form-group input {
     width: 100%;
     padding: 10px 14px;
-    border: 1px solid #1e68c1;
+    border: 1px solid #cbd5e1;
     border-radius: 6px;
     font-size: 14px;
     outline: none;
@@ -62,31 +64,50 @@ body {
 }
 
 .form-group input:focus {
-    border-color: #2563eb;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    border-color: #0080ff;
+    box-shadow: 0 0 0 3px rgba(0, 128, 255, 0.15);
 }
 
 .btn {
     width: 100%;
     padding: 11px;
-    background-color: #2563eb;
+    background-color: #0080ff;
     color: #ffffff;
     border: none;
     border-radius: 6px;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
+    margin-top: 8px;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .btn:hover {
-    background-color: #1d4ed8;
+    background-color: #0066cc;
 }
 
 .btn:active {
     transform: scale(0.98);
 }
 
+.auth-redirect {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.auth-redirect a {
+    color: #0080ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-redirect a:hover {
+    text-decoration: underline;
+}
+
+/* --- DASHBOARD STYLES --- */
 .navbar {
     background-color: #0f172a;
     color: #ffffff;
@@ -138,36 +159,36 @@ body {
     margin-bottom: 24px;
     color: #64748b;
     font-size: 14px;
-    font-weight: bold;
 }
 
+/* --- TABLE STYLES --- */
 .data-table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 8px;
     overflow: hidden;
-    border: 1px solid #096df0;
+    border: 1px solid #e2e8f0;
 }
 
 .data-table th, 
 .data-table td {
     padding: 14px 18px;
     text-align: left;
-    border-bottom: 1px solid #066ef5;
+    border-bottom: 1px solid #e2e8f0;
     font-size: 14px;
 }
 
 .data-table th {
     background-color: #0080ff;
-    color: #334155;
+    color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.5px;
 }
 
-.data-table tbody tr:nth-child {
+.data-table tbody tr:nth-child(even) {
     background-color: #f8fafc;
 }
 
