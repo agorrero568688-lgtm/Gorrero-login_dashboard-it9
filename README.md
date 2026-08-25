@@ -1,4 +1,4 @@
-# Student Portal Web Application
+# Student List Web Application
 
 A static front-end demonstration showing user flow across registration, login, and data visualization.
 
@@ -38,9 +38,3 @@ A static front-end demonstration showing user flow across registration, login, a
 2. To sign out, click the **Logout** button located on the top-right navigation bar to return to `login.html`.
 
 ---
-
-## Submission Setup (GitHub Instructions)
-
-1. **Initialize repository:**
-   ```bash
-   git init
